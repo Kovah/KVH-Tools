@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+
+  # --- PHP 7.3
+  php:
+    container_name: "kvhtools-php"
+    build:
+      context: .
+      dockerfile: ./docker/dockerfiles/development.Dockerfile
+    depends_on:
+      - redis
+    volumes:
+      - .:/app:delegated
+      - ./docker/php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
+
+  # --- nginx 1.16
+  nginx:
+    container_name: "kvhtools-nginx"
+    image: bitnami/nginx:1.16
+    ports:
+      - "80:8085"
+    depends_on:
+      - php
+    volumes:
+      - .:/app:delegated
+      - ./docker/nginx/development.conf:/opt/bitnami/nginx/conf/vhosts/site.conf:ro
+
+  # --- Redis 5.0
+  redis:
+    container_name: "kvhtools-redis"
+    image: bitnami/redis:5.0
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    ports:
+      - "127.0.0.1:6379:6379"
+
+volumes:
+  kvhtools-db:
+    driver: local
