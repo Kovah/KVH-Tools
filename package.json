@@ -12,7 +12,7 @@
     "tailwindcss": "^1.1.4"
   },
   "scripts": {
-    "build": "postcss app/assets/stylesheets/application.scss -o app/assets/stylesheets/application.css",
-    "build-prod": "NODE_ENV=production postcss app/assets/stylesheets/application.scss -o app/assets/stylesheets/application.css"
+    "build": "postcss app/assets/stylesheets/styles.scss -o app/assets/stylesheets/application.css",
+    "build-prod": "NODE_ENV=production postcss app/assets/stylesheets/styles.scss -o app/assets/stylesheets/application.css"
   }
 }
