@@ -1,0 +1,18 @@
+{
+  "name": "kvh-tools",
+  "version": "1.0.0",
+  "repository": "git@github.com:Kovah/KVH-Tools.git",
+  "author": "Kevin Woblick <mail@kovah.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.26",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.1.4"
+  },
+  "scripts": {
+    "build": "postcss app/assets/stylesheets/application.scss -o app/assets/stylesheets/application.css",
+    "build-prod": "NODE_ENV=production postcss app/assets/stylesheets/application.scss -o app/assets/stylesheets/application.css"
+  }
+}
