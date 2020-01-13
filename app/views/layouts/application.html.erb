@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= t 'meta_title' %></title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title><%= t 'meta_title' %></title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+</head>
 
-  <body>
+<body class="bg-gray-900 text-gray-500">
+  <div class="container mx-auto">
+    <%= render "partials/nav" %>
     <%= yield %>
-  </body>
+  </div>
+</body>
 </html>
