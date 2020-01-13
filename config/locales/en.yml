@@ -31,3 +31,12 @@
 
 en:
   kvhtools: "KVH Tools"
+
+  back_to_top: "Back to Top"
+
+  tool: "Tool"
+  tools: "Tools"
+  use_tool: "Use Tool"
+
+  tool_overview: "Tools Overview"
+  string_tools: "String Tools"

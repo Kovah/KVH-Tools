@@ -1,0 +1,6 @@
+en:
+  tool1: "Tool 1"
+  tool1_description: "Tool 1 is used to convert x into y."
+
+  tool2: "Tool 2"
+  tool2_description: "Tool 2 is used to generate a random x between y and z."

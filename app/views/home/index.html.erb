@@ -1,16 +1,20 @@
-<div class="container mx-auto">
+<h2 class="text-2xl"><%= t :tool_overview %></h2>
 
-  <div class="max-w-sm mx-auto bg-gray-800 text-gray-200 shadow-lg rounded-lg overflow-hidden mt-6">
-    <div class="sm:flex sm:items-center px-6 py-4">
-      <img class="block mx-auto sm:mx-0 sm:flex-shrink-0 h-16 sm:h-24 rounded-full" src="https://randomuser.me/api/portraits/women/17.jpg" alt="Woman's Face">
-      <div class="mt-4 sm:mt-0 sm:ml-4 text-center sm:text-left">
-        <p class="text-xl leading-tight">Erin Lindford</p>
-        <p class="text-sm leading-tight text-gray-600">Customer Support Specialst</p>
-        <div class="mt-4">
-          <button class="text-green-500 hover:text-white hover:bg-green-500 border border-green-500 text-xs font-semibold rounded-full px-4 py-1 leading-normal">Message</button>
-        </div>
-      </div>
+<h3 class="text-xl mt-5"><%= t :string_tools %></h3>
+
+<ul class="lg:flex">
+  <li class="lg:w-1/2 lg:mr-5 md:flex md:items-center p-3 mt-5 border border-gray-900 rounded-lg">
+    <div class="mr-3">
+      <%= link_to (t :tool1), '#', { class: "hover:text-white mr-3" } %>
+      <p class="text-gray-600 text-sm"><%= t :tool1_description %></p>
     </div>
-  </div>
-
-</div>
+    <%= link_to (t :use_tool), '#', { class: "inline-block py-1 px-2 mt-3 md:mt-0 md:ml-auto border border-green-700 hover:bg-green-700 rounded-lg text-sm" } %>
+  </li>
+  <li class="lg:w-1/2 md:flex md:items-center p-3 mt-5 border border-gray-900 rounded-lg">
+    <div class="mr-3">
+      <%= link_to (t :tool2), '#', { class: "hover:text-white mr-3" } %>
+      <p class="text-gray-600 text-sm"><%= t :tool2_description %></p>
+    </div>
+    <%= link_to (t :use_tool), '#', { class: "inline-block py-1 px-2 mt-3 md:mt-0 md:ml-auto border border-green-700 hover:bg-green-700 rounded-lg text-sm" } %>
+  </li>
+</ul>
