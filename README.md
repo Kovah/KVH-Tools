@@ -1,5 +1,24 @@
-# KVH Tools
+# README
 
----
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-KVH Tools is a project by [Kovah](https://kovah.de) | [Contributors](https://github.com/Kovah/KVH-Tools/graphs/contributors)
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

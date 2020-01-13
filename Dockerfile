@@ -8,4 +8,4 @@ WORKDIR /app
 COPY ./Gemfile /app
 COPY ./Gemfile.lock /app
 
-RUN bundle install --binstubs
+RUN bundle install
