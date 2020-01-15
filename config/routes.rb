@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  get 'home/index'
-  get 'home/test'
-  post 'home/test', to: 'home#run'
   root 'home#index'
+  get 'home/index'
+
+  namespace :tool do
+
+    namespace :string do
+      resources :length, only: [:new, :create], path_names: { new: '' }
+    end
+  end
 end

@@ -1,9 +1,0 @@
-
-<div class="my-6 text-black">
-  <%= form_with url: url_for(:controller => 'home', :action => 'test'), method: 'POST' do %>
-    <%= text_field(:input, :input) %>
-    <%= submit_tag("Search") %>
-  <% end %>
-</div>
-
-<%= @output %>
