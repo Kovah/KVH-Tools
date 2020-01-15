@@ -5,16 +5,16 @@
 <ul class="lg:flex">
   <li class="lg:w-1/2 lg:mr-5 md:flex md:items-center p-3 mt-5 border border-gray-900 rounded-lg">
     <div class="mr-3">
-      <%= link_to (t :tool1), '#', { class: "hover:text-white mr-3" } %>
+      <%= link_to (t :tool1), new_tool_string_length_path, { class: "hover:text-white mr-3" } %>
       <p class="text-gray-600 text-sm"><%= t :tool1_description %></p>
     </div>
-    <%= link_to (t :use_tool), '#', { class: "inline-block py-1 px-2 mt-3 md:mt-0 md:ml-auto border border-green-700 hover:bg-green-700 rounded-lg text-sm" } %>
+    <%= link_to (t :use_tool), new_tool_string_length_path, { class: "inline-block py-1 px-2 mt-3 md:mt-0 md:ml-auto border border-green-700 hover:bg-green-700 rounded-lg text-sm text-center" } %>
   </li>
   <li class="lg:w-1/2 md:flex md:items-center p-3 mt-5 border border-gray-900 rounded-lg">
     <div class="mr-3">
       <%= link_to (t :tool2), '#', { class: "hover:text-white mr-3" } %>
       <p class="text-gray-600 text-sm"><%= t :tool2_description %></p>
     </div>
-    <%= link_to (t :use_tool), '#', { class: "inline-block py-1 px-2 mt-3 md:mt-0 md:ml-auto border border-green-700 hover:bg-green-700 rounded-lg text-sm" } %>
+    <%= link_to (t :use_tool), '#', { class: "inline-block py-1 px-2 mt-3 md:mt-0 md:ml-auto border border-green-700 hover:bg-green-700 rounded-lg text-sm text-center" } %>
   </li>
 </ul>
