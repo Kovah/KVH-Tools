@@ -1,0 +1,13 @@
+<h2>Trim a String</h2>
+
+<div class="my-6 text-black">
+  <%= form_for :trim, method: 'POST' do %>
+    <%= text_area(:tool, :input) %>
+    <%= submit_tag(t :use_tool) %>
+  <% end %>
+</div>
+
+<% if @output %>
+  <label for="output"><%= t :output %></label>
+  <textarea id="output" cols="30" rows="10"><%= @output %></textarea>
+<% end %>

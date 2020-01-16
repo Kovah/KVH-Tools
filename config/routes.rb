@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
     namespace :string do
       resources :length, only: [:new, :create], path_names: { new: '' }
+      resources :trim, only: [:new, :create], path_names: { new: '' }
     end
   end
 end

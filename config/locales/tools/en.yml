@@ -2,5 +2,5 @@ en:
   tool1: "String Length"
   tool1_description: "Get the length of a string or word or any input your specify."
 
-  tool2: "Tool 2"
-  tool2_description: "Tool 2 is used to generate a random x between y and z."
+  tool2: "Trim a String"
+  tool2_description: "Remove any spaces or new lines from the start and the end of a string, word or any input you enter."

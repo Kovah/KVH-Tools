@@ -38,5 +38,8 @@ en:
   tools: "Tools"
   use_tool: "Use Tool"
 
+  input: "Input"
+  output: "Output"
+
   tool_overview: "Tools Overview"
   string_tools: "String Tools"
