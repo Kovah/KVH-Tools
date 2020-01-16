@@ -42,4 +42,5 @@ en:
   output: "Output"
 
   tool_overview: "Tools Overview"
+  network_tools: "Network Tools"
   string_tools: "String Tools"

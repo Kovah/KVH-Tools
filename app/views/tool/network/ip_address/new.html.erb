@@ -1,0 +1,8 @@
+<h2><%= t('network.ip.title') %></h2>
+
+<p><%= t('network.ip.description') %></p>
+
+<ul class="mt-6">
+  <li><%= t('network.ip.address') %>: <b><%= @request.remote_ip %></b></li>
+  <li><%= t('network.ip.user_agent') %>: <b><%= @request.user_agent %></b></li>
+</ul>
