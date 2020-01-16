@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title><%= t 'meta_title' %></title>
+  <%= render "partials/meta" %>
+
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
-  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= stylesheet_link_tag 'application' %>
 </head>
 
 <body class="bg-gray-900 text-gray-500">
-  <div id="top"></div>
-  <div class="container px-2 mx-auto">
-    <%= render "partials/nav" %>
-    <div class="p-4 my-6 bg-gray-800 text-gray-200 shadow rounded-lg">
-      <%= yield %>
-    </div>
-    <%= render "partials/footer" %>
+<div id="top"></div>
+<div class="container px-2 mx-auto">
+  <%= render "partials/nav" %>
+  <div class="p-4 my-6 bg-gray-800 text-gray-200 shadow rounded-lg">
+    <%= yield %>
   </div>
+  <%= render "partials/footer" %>
+</div>
 </body>
 </html>
