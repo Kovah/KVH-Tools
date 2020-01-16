@@ -1,4 +1,4 @@
 <footer class="my-8 text-gray-600 text-center text-sm">
-  <%= link_to (t :back_to_top), '#top', { class: "hover:text-white" } %> |
-  <%= link_to (t :kvhtools), root_path, { class: "hover:text-white" } %>
+  <a href="<%= url_for '#top' %>" class="hover:text-white"><%= t :back_to_top %></a> |
+  <a href="<%= url_for root_path %>" class="hover:text-white"><%= t :kvhtools %></a>
 </footer>
