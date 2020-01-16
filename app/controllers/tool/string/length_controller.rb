@@ -1,9 +1,6 @@
 class Tool::String::LengthController < ApplicationController
-  def new
-  end
-
   def create
-    @tool = String::StringLength.new(params[:tool])
+    @tool = String::Length.new(params[:tool])
 
     if @tool.valid?
       @output = @tool.run
