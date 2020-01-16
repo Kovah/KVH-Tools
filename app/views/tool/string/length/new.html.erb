@@ -1,4 +1,6 @@
-<h2>String length</h2>
+<h2><%= t('string.length.title') %></h2>
+
+<p><%= t('string.length.description') %></p>
 
 <div class="my-6 text-black">
   <%= form_for new_tool_string_length_path, method: 'POST' do %>
@@ -8,5 +10,5 @@
 </div>
 
 <% if @output %>
-  Length: <%= @output %>
+  <%= t('string.length.length') %>: <%= @output %>
 <% end %>

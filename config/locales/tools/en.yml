@@ -1,6 +1,10 @@
 en:
-  tool1: "String Length"
-  tool1_description: "Get the length of a string or word or any input your specify."
+  string:
+    length:
+      title: "String Length"
+      description: "Get the length of a string or word or any input your specify."
+      length: "Length"
 
-  tool2: "Trim a String"
-  tool2_description: "Remove any spaces or new lines from the start and the end of a string, word or any input you enter."
+    trim:
+      title: "Trim a String"
+      description: "Remove any spaces or new lines from the start and the end of a string, word or any input you enter."
