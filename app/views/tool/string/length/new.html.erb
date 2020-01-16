@@ -1,14 +1,18 @@
-<h2><%= t('string.length.title') %></h2>
+<h2 class="text-2xl"><%= t('string.length.title') %></h2>
 
-<p><%= t('string.length.description') %></p>
+<p class="text-gray-500"><%= t('string.length.description') %></p>
 
-<div class="my-6 text-black">
-  <%= form_for new_tool_string_length_path, method: 'POST' do %>
-    <%= text_area(:tool, :input) %>
-    <%= submit_tag(t :use_tool) %>
+<div class="mt-6">
+  <%= form_for :length, method: 'POST' do %>
+    <textarea rows="5" id="tool_input" name="tool[input]"
+      class="w-full p-3 mb-3 rounded bg-gray-900 border border-black text-white"
+    ><%= defined?(@tool) ? @tool.input : '' %></textarea>
+    <%= render 'component/submit', text: (t :use_tool) %>
   <% end %>
 </div>
 
 <% if @output %>
-  <%= t('string.length.length') %>: <%= @output %>
+  <div class="mt-6">
+    <%= t('string.length.length') %>: <%= @output %>
+  </div>
 <% end %>

@@ -9,7 +9,7 @@
       <p class="text-gray-600 text-sm"><%= t('network.ip.description') %></p>
     </div>
     <div class="mt-3 md:mt-0 md:ml-auto text-center">
-      <%= render "component/btn", text: (t :use_tool), link: new_tool_network_ip_address_path %>
+      <%= render "component/btn-sm", text: (t :use_tool), link: new_tool_network_ip_address_path %>
     </div>
   </li>
 </ul>
@@ -23,7 +23,7 @@
       <p class="text-gray-600 text-sm"><%= t('string.length.description') %></p>
     </div>
     <div class="mt-3 md:mt-0 md:ml-auto text-center">
-      <%= render "component/btn", text: (t :use_tool), link: new_tool_string_length_path %>
+      <%= render 'component/btn-sm', text: (t :use_tool), link: new_tool_string_length_path %>
     </div>
   </li>
   <li class="md:w-1/2 md:flex md:items-top p-3 mt-5 border border-gray-900 rounded-lg">
@@ -32,7 +32,7 @@
       <p class="text-gray-600 text-sm"><%= t('string.trim.description') %></p>
     </div>
     <div class="mt-3 md:mt-0 md:ml-auto text-center">
-      <%= render "component/btn", text: (t :use_tool), link: new_tool_string_trim_path %>
+      <%= render 'component/btn-sm', text: (t :use_tool), link: new_tool_string_trim_path %>
     </div>
   </li>
 </ul>
