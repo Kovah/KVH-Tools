@@ -43,5 +43,6 @@ en:
   output: "Output"
 
   tool_overview: "Tools Overview"
+  generator_tools: "Generators"
   network_tools: "Network Tools"
   string_tools: "String Tools"

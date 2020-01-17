@@ -1,0 +1,21 @@
+<h2 class="text-2xl"><%= t('generate.uuid.title') %></h2>
+
+<p class="text-gray-500"><%= t('generate.uuid.description') %></p>
+
+<div class="mt-6">
+  <%= form_for :uuid, method: 'POST' do %>
+    <label for="output" class="inline-block mb-2"><%= t('generate.uuid.amount') %></label>
+    <input id="tool_amount" name="tool[amount]" type="number" min="1" max="50" required
+      value="<%= defined?(@tool) ? @tool.amount : 1 %>"
+      class="w-full p-3 mb-3 rounded bg-gray-900 border border-black text-white">
+    <%= render 'component/submit', text: (t :use_tool) %>
+  <% end %>
+</div>
+
+<% if @output %>
+  <div class="mt-6">
+    <label for="output" class="inline-block mb-2"><%= t('generate.uuid.uuids') %></label>
+    <textarea id="output" rows="5" class="w-full p-3 mb-3 rounded bg-gray-900 border border-black text-white"
+    ><%= @output.join("\n") %></textarea>
+  </div>
+<% end %>

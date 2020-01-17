@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   namespace :tool do
 
+    namespace :generate do
+      resources :uuid, only: [:new, :create], path_names: { new: '' }
+    end
+
     namespace :network do
       resources :ip_address, path: 'ip-address', only: [:new], path_names: { new: '' }
     end

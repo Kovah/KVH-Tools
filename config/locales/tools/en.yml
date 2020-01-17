@@ -1,4 +1,18 @@
 en:
+  generate:
+    uuid:
+      title: "Generate a UUID"
+      description: "Generate a UUID (Universally Unique Identifier) for any purpose."
+      uuids: "Your UUIDs"
+      amount: "UUID"
+
+  network:
+    ip:
+      title: "Your IP Address"
+      description: "Get to know your own IP address with additional information about your browser."
+      address: "Your IP address"
+      user_agent: "Your User Agent"
+
   string:
     length:
       title: "String Length"
@@ -8,10 +22,3 @@ en:
     trim:
       title: "Trim a String"
       description: "Remove any spaces or new lines from the start and the end of a string, word or any input you enter."
-
-  network:
-    ip:
-      title: "Your IP Address"
-      description: "Get to know your own IP address with additional information about your browser."
-      address: "Your IP address"
-      user_agent: "Your User Agent"
