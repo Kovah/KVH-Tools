@@ -4,9 +4,9 @@ class Tool::String::TrimController < ApplicationController
 
     if @tool.valid?
       @output = @tool.run
-      render "tool/string/trim/new"
+      render 'tool/string/trim/new'
     else
-      abort
+      render 'tool/string/trim/new'
     end
   end
 end

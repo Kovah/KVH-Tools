@@ -4,9 +4,9 @@ class Tool::String::LengthController < ApplicationController
 
     if @tool.valid?
       @output = @tool.run
-      render "tool/string/length/new"
+      render 'tool/string/length/new'
     else
-      abort
+      render 'tool/string/length/new'
     end
   end
 end

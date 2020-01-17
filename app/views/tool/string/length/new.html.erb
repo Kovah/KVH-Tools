@@ -4,9 +4,13 @@
 
 <div class="mt-6">
   <%= form_for :length, method: 'POST' do %>
-    <textarea rows="5" id="tool_input" name="tool[input]"
+
+    <%= render 'partials/tool-alerts' %>
+
+    <textarea rows="5" id="tool_input" name="tool[input]" required
       class="w-full p-3 mb-3 rounded bg-gray-900 border border-black text-white"
     ><%= defined?(@tool) ? @tool.input : '' %></textarea>
+
     <%= render 'component/submit', text: (t :use_tool) %>
   <% end %>
 </div>
