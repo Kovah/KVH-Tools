@@ -1,5 +1,9 @@
-<nav class="bg-green-700 p-4 my-8 shadow-lg rounded-lg">
-	<div>
-    <%= link_to (t :kvhtools), root_path, { class: "mr-3 text-white font-bold" } %>
+<nav class="bg-green-700 py-3 px-4 my-8 shadow-lg rounded-lg text-white">
+	<div class="flex items-center">
+    <span class="mr-6 text-white text-xl font-bold"><%= t :kvhtools %></span>
+    <a href="<%= url_for root_path %>"
+      class="inline-block py-1 px-3 rounded border border-green-800 hover:bg-green-800">
+      <%= t :home %>
+    </a>
   </div>
 </nav>
