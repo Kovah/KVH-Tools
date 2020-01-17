@@ -32,6 +32,21 @@
 * Get IP address for hostname
 * Get parts of an URL
 
+
+---
+
+## Development
+
+### Testing
+
+You can run the basic Rails tests by using this console command:
+
+```
+docker exec kvhtools-rails bash -c "RUBYOPT='-W:no-deprecated -W:no-experimental' rails test"
+```
+
+(`RUBYOPT='-W:no-deprecated -W:no-experimental'` will prevent deprecation warnings triggered by internal Rails libraries.)
+
 ---
 
 KVH Tools is a project by [Kovah](https://kovah.de) | [Contributors](https://github.com/Kovah/KVH-Tools/graphs/contributors)
