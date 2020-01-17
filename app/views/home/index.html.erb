@@ -2,37 +2,31 @@
 
 <h3 class="text-xl mt-4"><%= t :network_tools %></h3>
 
-<ul class="lg:flex">
-  <li class="md:w-1/2 lg:mr-5 md:flex md:items-top p-3 mt-5 border border-gray-900 rounded-lg">
-    <div class="md:flex-1 mr-3">
-      <%= link_to t('network.ip.title'), new_tool_network_ip_address_path, {class: "hover:text-white mr-3"} %>
-      <p class="text-gray-600 text-sm"><%= t('network.ip.description') %></p>
-    </div>
-    <div class="mt-3 md:mt-0 md:ml-auto text-center">
-      <%= render "component/btn-sm", text: (t :use_tool), link: new_tool_network_ip_address_path %>
-    </div>
-  </li>
-</ul>
+<div class="md:flex justify-between -mx-2">
+  <div class="md:w-1/2 px-2 mt-5">
+    <%= render 'component/tool-card',
+               link: new_tool_network_ip_address_path,
+               title: t('network.ip.title'),
+               description: t('network.ip.description')
+    %>
+  </div>
+</div>
 
 <h3 class="text-xl mt-6"><%= t :string_tools %></h3>
 
-<ul class="lg:flex">
-  <li class="md:w-1/2 lg:mr-5 md:flex md:items-top p-3 mt-5 border border-gray-900 rounded-lg">
-    <div class="md:flex-1 mr-3">
-      <%= link_to t('string.length.title'), new_tool_string_length_path, {class: "hover:text-white mr-3"} %>
-      <p class="text-gray-600 text-sm"><%= t('string.length.description') %></p>
-    </div>
-    <div class="mt-3 md:mt-0 md:ml-auto text-center">
-      <%= render 'component/btn-sm', text: (t :use_tool), link: new_tool_string_length_path %>
-    </div>
-  </li>
-  <li class="md:w-1/2 md:flex md:items-top p-3 mt-5 border border-gray-900 rounded-lg">
-    <div class="md:flex-1 mr-3">
-      <%= link_to t('string.trim.title'), new_tool_string_trim_path, {class: "hover:text-white mr-3"} %>
-      <p class="text-gray-600 text-sm"><%= t('string.trim.description') %></p>
-    </div>
-    <div class="mt-3 md:mt-0 md:ml-auto text-center">
-      <%= render 'component/btn-sm', text: (t :use_tool), link: new_tool_string_trim_path %>
-    </div>
-  </li>
-</ul>
+<div class="md:flex -mx-2">
+  <div class="flex-1 md:w-1/2 px-2 mt-5">
+    <%= render 'component/tool-card',
+               link: new_tool_string_length_path,
+               title: t('string.length.title'),
+               description: t('string.length.description')
+    %>
+  </div>
+  <div class="flex-1 md:w-1/2 px-2 mt-5">
+    <%= render 'component/tool-card',
+               link: new_tool_string_trim_path,
+               title: t('string.trim.title'),
+               description: t('string.trim.description')
+    %>
+  </div>
+</div>
