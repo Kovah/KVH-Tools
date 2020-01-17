@@ -6,7 +6,7 @@ class Tool::Generate::UuidController < ApplicationController
       @output = @tool.run
       render 'tool/generate/uuid/new'
     else
-      abort
+      render 'tool/generate/uuid/new'
     end
   end
 end

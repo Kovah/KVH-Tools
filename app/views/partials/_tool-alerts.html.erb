@@ -1,0 +1,9 @@
+<% if defined?(@tool) && @tool.errors.any? %>
+  <div class="my-4 p-3 border bg-red-900 border-red-800 rounded text-sm">
+    <ul>
+      <% @tool.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
