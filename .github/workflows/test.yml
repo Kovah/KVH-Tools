@@ -16,7 +16,9 @@ jobs:
       - name: Build and test with Rake
         env:
           RAILS_ENV: test
+          RUBYOPT: '-W:no-deprecated -W:no-experimental'
         run: |
           gem install bundler
           bundle install --jobs 4 --retry 3
+          touch app/assets/stylesheets/application.css
           bundle exec rails test
