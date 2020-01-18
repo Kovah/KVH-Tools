@@ -1,9 +1,9 @@
 <h2 class="text-2xl"><%= t :tool_overview %></h2>
 
-<h3 class="text-xl mt-4"><%= t :generator_tools %></h3>
+<h3 class="text-xl mt-6"><%= t :generator_tools %></h3>
 
 <div class="md:flex justify-between -mx-2">
-  <div class="md:w-1/2 px-2 mt-5">
+  <div class="md:w-1/2 px-2 mt-4">
     <%= render 'component/tool-card',
                link: new_tool_generate_uuid_path,
                title: t('generate.uuid.title'),
@@ -12,10 +12,10 @@
   </div>
 </div>
 
-<h3 class="text-xl mt-4"><%= t :network_tools %></h3>
+<h3 class="text-xl mt-6"><%= t :network_tools %></h3>
 
 <div class="md:flex justify-between -mx-2">
-  <div class="md:w-1/2 px-2 mt-5">
+  <div class="md:w-1/2 px-2 mt-4">
     <%= render 'component/tool-card',
                link: new_tool_network_ip_address_path,
                title: t('network.ip.title'),
@@ -27,14 +27,14 @@
 <h3 class="text-xl mt-6"><%= t :string_tools %></h3>
 
 <div class="md:flex -mx-2">
-  <div class="flex-1 md:w-1/2 px-2 mt-5">
+  <div class="flex-1 md:w-1/2 px-2 mt-4">
     <%= render 'component/tool-card',
                link: new_tool_string_length_path,
                title: t('string.length.title'),
                description: t('string.length.description')
     %>
   </div>
-  <div class="flex-1 md:w-1/2 px-2 mt-5">
+  <div class="flex-1 md:w-1/2 px-2 mt-4">
     <%= render 'component/tool-card',
                link: new_tool_string_trim_path,
                title: t('string.trim.title'),
