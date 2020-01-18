@@ -1,0 +1,25 @@
+<h2 class="text-2xl"><%= t('encode_decode.base64.title') %></h2>
+
+<p class="text-gray-500"><%= t('encode_decode.base64.description') %></p>
+
+<div class="mt-6">
+  <%= form_for :length, method: 'POST' do %>
+
+    <%= render 'partials/tool-alerts' %>
+
+    <textarea rows="5" id="tool_input" name="tool[input]" required
+      class="w-full p-3 mb-3 rounded bg-gray-900 border border-black text-white"
+    ><%= defined?(@tool) ? @tool.input : '' %></textarea>
+
+    <%= render 'component/submit', text: t('encode_decode.encode'), name: 'tool[operation]', value: 'encode' %>
+    <%= render 'component/submit', text: t('encode_decode.decode'), name: 'tool[operation]', value: 'decode' %>
+  <% end %>
+</div>
+
+<% if @output %>
+  <div class="mt-6">
+    <label for="output" class="inline-block mb-2"><%= t :output %></label>
+    <textarea id="output" rows="5" class="w-full p-3 mb-3 rounded bg-gray-900 border border-black text-white"
+    ><%= @output %></textarea>
+  </div>
+<% end %>

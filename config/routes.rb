@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   namespace :tool do
 
+    namespace :encode_decode, path: 'encode-decode' do
+      resources :base64, only: [:new, :create], path_names: { new: '' }
+    end
+
     namespace :generate do
       resources :uuid, only: [:new, :create], path_names: { new: '' }
     end

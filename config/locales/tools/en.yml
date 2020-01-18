@@ -1,4 +1,11 @@
 en:
+  encode_decode:
+    encode: 'Encode'
+    decode: 'Decode'
+    base64:
+      title: "Encode to Base 64 / Decode from Base64"
+      description: "Use the Base64 algorithm to encode any input or decode a Base64 input."
+
   generate:
     uuid:
       title: "Generate a UUID"

@@ -1,5 +1,17 @@
 <h2 class="text-2xl"><%= t :tool_overview %></h2>
 
+<h3 class="text-xl mt-6"><%= t :encode_decode_tools %></h3>
+
+<div class="md:flex justify-between -mx-2">
+  <div class="md:w-1/2 px-2 mt-4">
+    <%= render 'component/tool-card',
+               link: new_tool_encode_decode_base64_path,
+               title: t('encode_decode.base64.title'),
+               description: t('encode_decode.base64.description')
+    %>
+  </div>
+</div>
+
 <h3 class="text-xl mt-6"><%= t :generator_tools %></h3>
 
 <div class="md:flex justify-between -mx-2">

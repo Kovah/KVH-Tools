@@ -43,6 +43,7 @@ en:
   output: "Output"
 
   tool_overview: "Tools Overview"
+  encode_decode_tools: "Encode / Decode"
   generator_tools: "Generators"
   network_tools: "Network Tools"
   string_tools: "String Tools"
