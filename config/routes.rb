@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
     namespace :generate do
       resources :uuid, only: [:new, :create], path_names: { new: '' }
+      resources :yes_no, path: 'yes-no', only: [:new, :create], path_names: { new: '' }
     end
 
     namespace :network do

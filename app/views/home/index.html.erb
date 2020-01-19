@@ -22,6 +22,13 @@
                description: t('generate.uuid.description')
     %>
   </div>
+  <div class="md:w-1/2 px-2 mt-4">
+    <%= render 'component/tool-card',
+      link: new_tool_generate_yes_no_path,
+      title: t('generate.yes_no.title'),
+      description: t('generate.yes_no.description')
+    %>
+  </div>
 </div>
 
 <h3 class="text-xl mt-6"><%= t :network_tools %></h3>

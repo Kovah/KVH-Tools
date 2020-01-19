@@ -12,6 +12,12 @@ en:
       description: "Generate a UUID (Universally Unique Identifier) for any purpose."
       uuids: "Your UUIDs"
       amount: "UUID"
+    yes_no:
+      title: "Yes or No?"
+      description: "Get a quick yes or no on any question with this oracle-like Yes / No generator."
+      answer: "Answer"
+      yes: "Yes"
+      no: "No"
 
   network:
     ip:
