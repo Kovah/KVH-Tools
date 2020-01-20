@@ -1,5 +1,7 @@
 FROM ruby:2.7
 
+RUN apt update && apt install nano
+
 RUN gem install -N rails
 
 RUN mkdir -p /app

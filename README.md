@@ -44,6 +44,29 @@
 
 ## Development
 
+### Setup
+
+Setup the environment using Docker and the pre-defined Dockerfile by using Docker compose:
+
+```
+$ docker-compose up -d
+```
+
+#### Generate your own secrets
+
+Start a shell on your Docker container:
+
+```
+$ docker exec -it kvhtools-rails bash
+```
+
+Generate a new base secret and master key inside the Docker container:
+
+```
+$ EDITOR=nano rails credentials:edit
+```
+
+
 ### Testing
 
 You can run the basic Rails tests by using this console command:
