@@ -1,4 +1,11 @@
 en:
+  convert:
+    bin_hex:
+      title: "Binary to Hex / Hex to Binary"
+      description: "Convert binary to hexadecimal or in reverse."
+      bin_to_hex: "Binary to Hex"
+      hex_to_bin: "Hex to Binary"
+
   encode_decode:
     encode: 'Encode'
     decode: 'Decode'

@@ -1,5 +1,17 @@
 <h2 class="text-2xl"><%= t :tool_overview %></h2>
 
+<h3 class="text-xl mt-6"><%= t :convert_tools %></h3>
+
+<div class="md:flex justify-between -mx-2">
+  <div class="md:w-1/2 px-2 mt-4">
+    <%= render 'component/tool-card',
+      link: new_tool_convert_bin_hex_path,
+      title: t('convert.bin_hex.title'),
+      description: t('convert.bin_hex.description')
+    %>
+  </div>
+</div>
+
 <h3 class="text-xl mt-6"><%= t :encode_decode_tools %></h3>
 
 <div class="md:flex justify-between -mx-2">

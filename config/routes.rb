@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   namespace :tool do
 
+    namespace :convert do
+      resources :bin_hex, path: 'bin-to-hex', only: [:new, :create], path_names: { new: '' }
+    end
+
     namespace :encode_decode, path: 'encode-decode' do
       resources :base64, only: [:new, :create], path_names: { new: '' }
     end
