@@ -5,7 +5,7 @@
 
 ### Convert
 
-* Binary to Hex / Hey to Binary
+* Binary to Hex / Hex to Binary
 * Symbol to Unicode code
 
 
