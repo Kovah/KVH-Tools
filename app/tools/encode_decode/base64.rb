@@ -7,6 +7,10 @@ class EncodeDecode::Base64 < Tool
   validates_format_of :operation, with: /encode|decode/
 
   def run
-    @operation === 'encode' ? Base64.strict_encode64(@input) : Base64.strict_decode64(@input)
+    begin
+      @operation === 'encode' ? Base64.strict_encode64(@input) : Base64.strict_decode64(@input)
+    rescue ArgumentError
+      "Error: Invalid Input"
+    end
   end
 end
